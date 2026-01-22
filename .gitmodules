@@ -1,0 +1,9 @@
+[submodule "basesite"]
+	path = basesite
+	url = git@github.com:adlsdztony/basesite.git
+[submodule "careerlink_web"]
+	path = careerlink_web
+	url = git@github.com:adlsdztony/careerlink_web.git
+[submodule "travelhub_web"]
+	path = travelhub_web
+	url = git@github.com:adlsdztony/travelhub_web.git
