@@ -7,3 +7,36 @@
 [submodule "travelhub_web"]
 	path = travelhub_web
 	url = git@github.com:adlsdztony/travelhub_web.git
+[submodule "adstream_web"]
+	path = adstream_web
+	url = git@github.com:adlsdztony/adstream_web.git
+[submodule "budgetwise_web"]
+	path = budgetwise_web
+	url = git@github.com:adlsdztony/budgetwise_web.git
+[submodule "chirper_web"]
+	path = chirper_web
+	url = git@github.com:adlsdztony/chirper_web.git
+[submodule "cloudcrm_web"]
+	path = cloudcrm_web
+	url = git@github.com:adlsdztony/cloudcrm_web.git
+[submodule "eventix_web"]
+	path = eventix_web
+	url = git@github.com:adlsdztony/eventix_web.git
+[submodule "expenseflow_web"]
+	path = expenseflow_web
+	url = git@github.com:adlsdztony/expenseflow_web.git
+[submodule "formcraft_web"]
+	path = formcraft_web
+	url = git@github.com:adlsdztony/formcraft_web.git
+[submodule "mailhub_web"]
+	path = mailhub_web
+	url = git@github.com:adlsdztony/mailhub_web.git
+[submodule "streamview_web"]
+	path = streamview_web
+	url = git@github.com:adlsdztony/streamview_web.git
+[submodule "teamchat_web"]
+	path = teamchat_web
+	url = git@github.com:adlsdztony/teamchat_web.git
+[submodule "vaultbank_web"]
+	path = vaultbank_web
+	url = git@github.com:adlsdztony/vaultbank_web.git
