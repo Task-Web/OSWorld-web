@@ -40,3 +40,15 @@
 [submodule "vaultbank_web"]
 	path = vaultbank_web
 	url = git@github.com:adlsdztony/vaultbank_web.git
+[submodule "canadacv_web"]
+	path = canadacv_web
+	url = git@github.com:adlsdztony/canadacv_web.git
+[submodule "ds2019_web"]
+	path = ds2019_web
+	url = git@github.com:adlsdztony/ds2019_web.git
+[submodule "vaccinebooking_web"]
+	path = vaccinebooking_web
+	url = git@github.com:adlsdztony/vaccinebooking_web.git
+[submodule "visaapplication_web"]
+	path = visaapplication_web
+	url = git@github.com:adlsdztony/visaapplication_web.git
