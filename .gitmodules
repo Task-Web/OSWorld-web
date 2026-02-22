@@ -52,6 +52,6 @@
 [submodule "visaapplication_web"]
 	path = visaapplication_web
 	url = git@github.com:adlsdztony/visaapplication_web.git
-[submodule "googlecalendar_web"]
-	path = googlecalendar_web
-	url = git@github.com:adlsdztony/googlecalendar_web.git
+[submodule "calendar_web"]
+	path = calendar_web
+	url = git@github.com:adlsdztony/calendar_web.git
