@@ -4,6 +4,7 @@ include:
   - ./adstream_web/web-compose.yml
   - ./basesite/web-compose.yml
   - ./budgetwise_web/web-compose.yml
+  - ./calendar_web/web-compose.yml
   - ./canadacv_web/web-compose.yml
   - ./careerlink_web/web-compose.yml
   - ./chirper_web/web-compose.yml
