@@ -1,57 +1,57 @@
 [submodule "basesite"]
 	path = basesite
-	url = git@github.com:adlsdztony/basesite.git
+	url = git@github.com:Task-Web/basesite.git
 [submodule "careerlink_web"]
 	path = careerlink_web
-	url = git@github.com:adlsdztony/careerlink_web.git
+	url = git@github.com:Task-Web/careerlink_web.git
 [submodule "travelhub_web"]
 	path = travelhub_web
-	url = git@github.com:adlsdztony/travelhub_web.git
+	url = git@github.com:Task-Web/travelhub_web.git
 [submodule "adstream_web"]
 	path = adstream_web
-	url = git@github.com:adlsdztony/adstream_web.git
+	url = git@github.com:Task-Web/adstream_web.git
 [submodule "budgetwise_web"]
 	path = budgetwise_web
-	url = git@github.com:adlsdztony/budgetwise_web.git
+	url = git@github.com:Task-Web/budgetwise_web.git
 [submodule "chirper_web"]
 	path = chirper_web
-	url = git@github.com:adlsdztony/chirper_web.git
+	url = git@github.com:Task-Web/chirper_web.git
 [submodule "cloudcrm_web"]
 	path = cloudcrm_web
-	url = git@github.com:adlsdztony/cloudcrm_web.git
+	url = git@github.com:Task-Web/cloudcrm_web.git
 [submodule "eventix_web"]
 	path = eventix_web
-	url = git@github.com:adlsdztony/eventix_web.git
+	url = git@github.com:Task-Web/eventix_web.git
 [submodule "expenseflow_web"]
 	path = expenseflow_web
-	url = git@github.com:adlsdztony/expenseflow_web.git
+	url = git@github.com:Task-Web/expenseflow_web.git
 [submodule "formcraft_web"]
 	path = formcraft_web
-	url = git@github.com:adlsdztony/formcraft_web.git
+	url = git@github.com:Task-Web/formcraft_web.git
 [submodule "mailhub_web"]
 	path = mailhub_web
-	url = git@github.com:adlsdztony/mailhub_web.git
+	url = git@github.com:Task-Web/mailhub_web.git
 [submodule "streamview_web"]
 	path = streamview_web
-	url = git@github.com:adlsdztony/streamview_web.git
+	url = git@github.com:Task-Web/streamview_web.git
 [submodule "teamchat_web"]
 	path = teamchat_web
-	url = git@github.com:adlsdztony/teamchat_web.git
+	url = git@github.com:Task-Web/teamchat_web.git
 [submodule "vaultbank_web"]
 	path = vaultbank_web
-	url = git@github.com:adlsdztony/vaultbank_web.git
+	url = git@github.com:Task-Web/vaultbank_web.git
 [submodule "canadacv_web"]
 	path = canadacv_web
-	url = git@github.com:adlsdztony/canadacv_web.git
+	url = git@github.com:Task-Web/canadacv_web.git
 [submodule "ds2019_web"]
 	path = ds2019_web
-	url = git@github.com:adlsdztony/ds2019_web.git
+	url = git@github.com:Task-Web/ds2019_web.git
 [submodule "vaccinebooking_web"]
 	path = vaccinebooking_web
-	url = git@github.com:adlsdztony/vaccinebooking_web.git
+	url = git@github.com:Task-Web/vaccinebooking_web.git
 [submodule "visaapplication_web"]
 	path = visaapplication_web
-	url = git@github.com:adlsdztony/visaapplication_web.git
+	url = git@github.com:Task-Web/visaapplication_web.git
 [submodule "calendar_web"]
 	path = calendar_web
-	url = git@github.com:adlsdztony/calendar_web.git
+	url = git@github.com:Task-Web/calendar_web.git
