@@ -55,3 +55,6 @@
 [submodule "calendar_web"]
 	path = calendar_web
 	url = git@github.com:Task-Web/calendar_web.git
+[submodule "travelhub_ad_web"]
+	path = travelhub_ad_web
+	url = https://github.com/ThisisXXZ/travelhub_ad_web
