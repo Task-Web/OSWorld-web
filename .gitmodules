@@ -58,3 +58,9 @@
 [submodule "travelhub_ad_web"]
 	path = travelhub_ad_web
 	url = https://github.com/ThisisXXZ/travelhub_ad_web
+[submodule "sgarrivalcard_web"]
+	path = sgarrivalcard_web
+	url = git@github.com:Task-Web/sgarrivalcard_web.git
+[submodule "surveillance_web"]
+	path = surveillance_web
+	url = git@github.com:Task-Web/surveillance_web.git
