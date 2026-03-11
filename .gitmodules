@@ -64,3 +64,6 @@
 [submodule "surveillance_web"]
 	path = surveillance_web
 	url = git@github.com:Task-Web/surveillance_web.git
+[submodule "govform_web"]
+	path = govform_web
+	url = git@github.com:Task-Web/govform_web.git

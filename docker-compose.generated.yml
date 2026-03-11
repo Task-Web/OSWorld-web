@@ -13,8 +13,11 @@ include:
   - ./eventix_web/web-compose.yml
   - ./expenseflow_web/web-compose.yml
   - ./formcraft_web/web-compose.yml
+  - ./govform_web/web-compose.yml
   - ./mailhub_web/web-compose.yml
+  - ./sgarrivalcard_web/web-compose.yml
   - ./streamview_web/web-compose.yml
+  - ./surveillance_web/web-compose.yml
   - ./teamchat_web/web-compose.yml
   - ./travelhub_web/web-compose.yml
   - ./vaccinebooking_web/web-compose.yml
