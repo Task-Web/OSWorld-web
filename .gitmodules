@@ -67,3 +67,6 @@
 [submodule "govform_web"]
 	path = govform_web
 	url = git@github.com:Task-Web/govform_web.git
+[submodule "awsconsole_web"]
+	path = awsconsole_web
+	url = git@github.com:adlsdztony/awsconsole_web.git
