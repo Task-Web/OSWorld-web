@@ -16,6 +16,6 @@ The steps you may need to take are as follows:
 2. On the basis of `basesite`, implement the target website. Retain the framework, language, and interfaces of `basesite`. 
 3. Use Playwright to operate the browser and verify the functionality. 
 4. Provide a URL for the user to verify the new website and ask for feedback. If the user confirms that the website is working as expected, proceed to the next step. If not, investigate further and make necessary adjustments until the website is working as expected.
-5. Finally, push the changes to GitHub using `gh`.  
+5. Finally, /push-to-github.  
 
 You can use AskUserQuestions to ask me questions if you need more information or clarification.
