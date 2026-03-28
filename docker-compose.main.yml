@@ -1,0 +1,21 @@
+services:
+  caddy:
+    image: lucaslorentz/caddy-docker-proxy:2.8-alpine
+    ports:
+      - "80:80"
+      - "443:443"
+    environment:
+      - CADDY_INGRESS_NETWORKS=web
+    networks:
+      - web
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock
+      - caddy_data:/data
+      - caddy_config:/config
+
+networks:
+  web:
+
+volumes:
+  caddy_data:
+  caddy_config:

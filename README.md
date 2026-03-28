@@ -6,7 +6,5 @@ To start the OSWorld website services, use the following command:
 ```bash
 git clone --recurse-submodules git@github.com:Task-Web/OSWorld-web.git
 
-./gen-compose.sh
-
-docker compose -f docker-compose.generated.yml up -d
+docker compose up -d
 ```
