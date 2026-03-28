@@ -69,7 +69,7 @@
 	url = git@github.com:Task-Web/govform_web.git
 [submodule "awsconsole_web"]
 	path = awsconsole_web
-	url = git@github.com:adlsdztony/awsconsole_web.git
+	url = git@github.com:Task-Web/awsconsole_web.git
 [submodule "dinogame_web"]
 	path = dinogame_web
-	url = git@github.com:adlsdztony/dinogame_web.git
+	url = git@github.com:Task-Web/dinogame_web.git
