@@ -58,18 +58,12 @@
 [submodule "travelhub_ad_web"]
 	path = travelhub_ad_web
 	url = https://github.com/ThisisXXZ/travelhub_ad_web
-[submodule "sgarrivalcard_web"]
-	path = sgarrivalcard_web
-	url = git@github.com:Task-Web/sgarrivalcard_web.git
 [submodule "surveillance_web"]
 	path = surveillance_web
 	url = git@github.com:Task-Web/surveillance_web.git
 [submodule "govform_web"]
 	path = govform_web
 	url = git@github.com:Task-Web/govform_web.git
-[submodule "awsconsole_web"]
-	path = awsconsole_web
-	url = git@github.com:Task-Web/awsconsole_web.git
 [submodule "dinogame_web"]
 	path = dinogame_web
 	url = git@github.com:Task-Web/dinogame_web.git

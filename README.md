@@ -44,10 +44,8 @@ Caddy (reverse proxy, ports 80/443)
 | vaccinebooking | `vaccinebooking_web` | Vaccine booking |
 | visaapplication | `visaapplication_web` | Visa application |
 | calendar | `calendar_web` | Calendar |
-| sgarrivalcard | `sgarrivalcard_web` | Singapore arrival card |
 | surveillance | `surveillance_web` | Surveillance monitoring |
 | govform | `govform_web` | Government forms |
-| awsconsole | `awsconsole_web` | AWS Console |
 | dinogame | `dinogame_web` | Dino game |
 
 ## Prerequisites

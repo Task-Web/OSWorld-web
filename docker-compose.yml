@@ -9,13 +9,13 @@ include:
   - ./careerlink_web/web-compose.yml
   - ./chirper_web/web-compose.yml
   - ./cloudcrm_web/web-compose.yml
+  - ./dinogame_web/web-compose.yml
   - ./ds2019_web/web-compose.yml
   - ./eventix_web/web-compose.yml
   - ./expenseflow_web/web-compose.yml
   - ./formcraft_web/web-compose.yml
   - ./govform_web/web-compose.yml
   - ./mailhub_web/web-compose.yml
-  - ./sgarrivalcard_web/web-compose.yml
   - ./streamview_web/web-compose.yml
   - ./surveillance_web/web-compose.yml
   - ./teamchat_web/web-compose.yml
