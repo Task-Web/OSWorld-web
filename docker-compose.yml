@@ -19,6 +19,7 @@ include:
   - ./streamview_web/web-compose.yml
   - ./surveillance_web/web-compose.yml
   - ./teamchat_web/web-compose.yml
+  - ./travelhub_ad_web/web-compose.yml
   - ./travelhub_web/web-compose.yml
   - ./vaccinebooking_web/web-compose.yml
   - ./vaultbank_web/web-compose.yml
