@@ -7,15 +7,9 @@
 [submodule "travelhub_web"]
 	path = travelhub_web
 	url = git@github.com:Task-Web/travelhub_web.git
-[submodule "adstream_web"]
-	path = adstream_web
-	url = git@github.com:Task-Web/adstream_web.git
 [submodule "budgetwise_web"]
 	path = budgetwise_web
 	url = git@github.com:Task-Web/budgetwise_web.git
-[submodule "chirper_web"]
-	path = chirper_web
-	url = git@github.com:Task-Web/chirper_web.git
 [submodule "cloudcrm_web"]
 	path = cloudcrm_web
 	url = git@github.com:Task-Web/cloudcrm_web.git
@@ -58,12 +52,6 @@
 [submodule "travelhub_ad_web"]
 	path = travelhub_ad_web
 	url = git@github.com:Task-Web/travelhub_ad_web.git
-[submodule "surveillance_web"]
-	path = surveillance_web
-	url = git@github.com:Task-Web/surveillance_web.git
-[submodule "govform_web"]
-	path = govform_web
-	url = git@github.com:Task-Web/govform_web.git
 [submodule "dinogame_web"]
 	path = dinogame_web
 	url = git@github.com:Task-Web/dinogame_web.git

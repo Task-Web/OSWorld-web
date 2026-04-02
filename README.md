@@ -28,9 +28,7 @@ Caddy (reverse proxy, ports 80/443)
 | careerlink | `careerlink_web` | Career/job platform |
 | travelhub | `travelhub_web` | Travel booking |
 | travelhub_ad | `travelhub_ad_web` | Travel advertising |
-| adstream | `adstream_web` | Advertising/streaming |
 | budgetwise | `budgetwise_web` | Budget management |
-| chirper | `chirper_web` | Social media (Twitter-like) |
 | cloudcrm | `cloudcrm_web` | Cloud CRM |
 | eventix | `eventix_web` | Event management |
 | expenseflow | `expenseflow_web` | Expense tracking |
@@ -44,8 +42,6 @@ Caddy (reverse proxy, ports 80/443)
 | vaccinebooking | `vaccinebooking_web` | Vaccine booking |
 | visaapplication | `visaapplication_web` | Visa application |
 | calendar | `calendar_web` | Calendar |
-| surveillance | `surveillance_web` | Surveillance monitoring |
-| govform | `govform_web` | Government forms |
 | dinogame | `dinogame_web` | Dino game |
 
 ## Prerequisites
