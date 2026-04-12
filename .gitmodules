@@ -55,3 +55,6 @@
 [submodule "dinogame_web"]
 	path = dinogame_web
 	url = git@github.com:Task-Web/dinogame_web.git
+[submodule "reviewsphere_web"]
+	path = reviewsphere_web
+	url = git@github.com:Task-Web/reviewsphere_web.git
