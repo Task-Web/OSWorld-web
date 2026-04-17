@@ -6,7 +6,6 @@ include:
   - ./calendar_web/web-compose.yml
   - ./canadacv_web/web-compose.yml
   - ./careerlink_web/web-compose.yml
-  - ./cloudops_web/web-compose.yml
   - ./cloudcrm_web/web-compose.yml
   - ./dinogame_web/web-compose.yml
   - ./ds2019_web/web-compose.yml
@@ -24,3 +23,4 @@ include:
   - ./vaultbank_web/web-compose.yml
   - ./visaapplication_web/web-compose.yml
   - ./wandb_web/web-compose.yml
+  - ./awsconsole_web/web-compose.yml
