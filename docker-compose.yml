@@ -6,6 +6,7 @@ include:
   - ./calendar_web/web-compose.yml
   - ./canadacv_web/web-compose.yml
   - ./careerlink_web/web-compose.yml
+  - ./cloudops_web/web-compose.yml
   - ./cloudcrm_web/web-compose.yml
   - ./dinogame_web/web-compose.yml
   - ./ds2019_web/web-compose.yml
@@ -13,6 +14,8 @@ include:
   - ./expenseflow_web/web-compose.yml
   - ./formcraft_web/web-compose.yml
   - ./mailhub_web/web-compose.yml
+  - ./overleaf_web/web-compose.yml
+  - ./reviewsphere_web/web-compose.yml
   - ./streamview_web/web-compose.yml
   - ./teamchat_web/web-compose.yml
   - ./travelhub_ad_web/web-compose.yml
@@ -20,3 +23,4 @@ include:
   - ./vaccinebooking_web/web-compose.yml
   - ./vaultbank_web/web-compose.yml
   - ./visaapplication_web/web-compose.yml
+  - ./wandb_web/web-compose.yml
