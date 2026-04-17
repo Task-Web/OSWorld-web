@@ -64,3 +64,6 @@
 [submodule "awsconsole_web"]
 	path = awsconsole_web
 	url = git@github.com:Task-Web/awsconsole_web.git
+[submodule "wandb_web"]
+	path = wandb_web
+	url = git@github.com:Task-Web/wandb_web.git
