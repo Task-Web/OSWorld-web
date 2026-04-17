@@ -58,3 +58,12 @@
 [submodule "reviewsphere_web"]
 	path = reviewsphere_web
 	url = git@github.com:Task-Web/reviewsphere_web.git
+[submodule "cloudops_web"]
+	path = cloudops_web
+	url = git@github.com:Task-Web/cloudops_web.git
+[submodule "overleaf_web"]
+	path = overleaf_web
+	url = git@github.com:Task-Web/overleaf_web.git
+[submodule "wandb_web"]
+	path = wandb_web
+	url = git@github.com:Task-Web/wandb_web.git
