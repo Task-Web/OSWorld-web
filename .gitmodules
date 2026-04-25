@@ -67,3 +67,6 @@
 [submodule "wandb_web"]
 	path = wandb_web
 	url = git@github.com:Task-Web/wandb_web.git
+[submodule "slidepuzzle_web"]
+	path = slidepuzzle_web
+	url = git@github.com:Task-Web/slidepuzzle_web.git
