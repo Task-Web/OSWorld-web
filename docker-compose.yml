@@ -13,9 +13,11 @@ include:
   - ./eventix_web/web-compose.yml
   - ./expenseflow_web/web-compose.yml
   - ./formcraft_web/web-compose.yml
+  - ./glbviewer_web/web-compose.yml
   - ./mailhub_web/web-compose.yml
   - ./overleaf_web/web-compose.yml
   - ./reviewsphere_web/web-compose.yml
+  - ./slidepuzzle_web/web-compose.yml
   - ./streamview_web/web-compose.yml
   - ./teamchat_web/web-compose.yml
   - ./travelhub_ad_web/web-compose.yml
