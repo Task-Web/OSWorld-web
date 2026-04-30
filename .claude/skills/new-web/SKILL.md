@@ -13,7 +13,7 @@ You should use english.
 The steps you may need to take are as follows:  
 
 1. First, copy the files of `basesite` (excluding Git-related files), rename the copy, initialize it as a repository, and publish it using `gh` (assuming `gh` is already logged in). Then, add the repository as a submodule.  
-2. On the basis of `basesite`, implement the target website. Retain the framework, language, and interfaces of `basesite`. 
+2. On the basis of `basesite`, implement the target website. Retain the framework, language, and api interfaces of `basesite`. `basesite/constitution.md` should be followed to ensure that the implementation of the new website is consistent with the constitution.  
 3. Edit web-compose.yml to fit the new website.
 4. Use Playwright to operate the browser and verify the functionality. 
 5. Run `npm run build` to check if the website can be built successfully. If there are any build errors, fix them until the website can be built successfully.
