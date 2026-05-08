@@ -8,6 +8,7 @@ include:
   - ./canadacv_web/web-compose.yml
   - ./careerlink_web/web-compose.yml
   - ./cloudcrm_web/web-compose.yml
+  - ./cube3d_web/web-compose.yml
   - ./dinogame_web/web-compose.yml
   - ./ds2019_web/web-compose.yml
   - ./eventix_web/web-compose.yml

@@ -13,6 +13,9 @@
 [submodule "cloudcrm_web"]
 	path = cloudcrm_web
 	url = git@github.com:Task-Web/cloudcrm_web.git
+[submodule "cube3d_web"]
+	path = cube3d_web
+	url = git@github.com:Task-Web/cube3d_web.git
 [submodule "eventix_web"]
 	path = eventix_web
 	url = git@github.com:Task-Web/eventix_web.git
