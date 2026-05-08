@@ -31,6 +31,7 @@ Caddy (reverse proxy, ports 80/443)
 | budgetwise | `budgetwise_web` | Budget management |
 | cloudcrm | `cloudcrm_web` | Cloud CRM |
 | cube3d | `cube3d_web` | Fixed-scramble 3D cube game |
+| kahoot | `kahoot_web` | Kahoot-style quiz creator |
 | eventix | `eventix_web` | Event management |
 | expenseflow | `expenseflow_web` | Expense tracking |
 | formcraft | `formcraft_web` | Form builder |
