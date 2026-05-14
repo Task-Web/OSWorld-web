@@ -20,6 +20,7 @@ include:
   - ./reviewsphere_web/web-compose.yml
   - ./slidepuzzle_web/web-compose.yml
   - ./streamview_web/web-compose.yml
+  - ./taskflow_web/web-compose.yml
   - ./teamchat_web/web-compose.yml
   - ./travelhub_ad_web/web-compose.yml
   - ./travelhub_web/web-compose.yml
