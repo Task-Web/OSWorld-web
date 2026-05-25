@@ -4,18 +4,12 @@
 [submodule "careerlink_web"]
 	path = careerlink_web
 	url = git@github.com:Task-Web/careerlink_web.git
-[submodule "travelhub_web"]
-	path = travelhub_web
-	url = git@github.com:Task-Web/travelhub_web.git
 [submodule "budgetwise_web"]
 	path = budgetwise_web
 	url = git@github.com:Task-Web/budgetwise_web.git
 [submodule "cloudcrm_web"]
 	path = cloudcrm_web
 	url = git@github.com:Task-Web/cloudcrm_web.git
-[submodule "cube3d_web"]
-	path = cube3d_web
-	url = git@github.com:Task-Web/cube3d_web.git
 [submodule "eventix_web"]
 	path = eventix_web
 	url = git@github.com:Task-Web/eventix_web.git
@@ -37,15 +31,6 @@
 [submodule "vaultbank_web"]
 	path = vaultbank_web
 	url = git@github.com:Task-Web/vaultbank_web.git
-[submodule "canadacv_web"]
-	path = canadacv_web
-	url = git@github.com:Task-Web/canadacv_web.git
-[submodule "ds2019_web"]
-	path = ds2019_web
-	url = git@github.com:Task-Web/ds2019_web.git
-[submodule "vaccinebooking_web"]
-	path = vaccinebooking_web
-	url = git@github.com:Task-Web/vaccinebooking_web.git
 [submodule "visaapplication_web"]
 	path = visaapplication_web
 	url = git@github.com:Task-Web/visaapplication_web.git
@@ -76,6 +61,3 @@
 [submodule "slidepuzzle_web"]
 	path = slidepuzzle_web
 	url = git@github.com:Task-Web/slidepuzzle_web.git
-[submodule "taskflow_web"]
-	path = taskflow_web
-	url = git@github.com:Task-Web/taskflow_web.git

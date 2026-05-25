@@ -22,7 +22,8 @@ if [[ ! -f "$ROOT_DIR/docker-compose.main.yml" ]]; then
 fi
 
 mapfile -t WEB_FILES < <(
-  find "$ROOT_DIR" -maxdepth 2 -mindepth 2 -type f -name web-compose.yml | sort
+  find "$ROOT_DIR" -maxdepth 2 -mindepth 2 -type f -name web-compose.yml \
+    ! -path "$ROOT_DIR/basesite/web-compose.yml" | sort
 )
 
 tmp_file="$(mktemp)"

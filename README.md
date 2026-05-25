@@ -11,8 +11,8 @@ Client
 Caddy (reverse proxy, ports 80/443)
   │
   ├── careerlink.localhost   → careerlink_web:3000
-  ├── travelhub.localhost    → travelhub_web:3000
-  ├── dinogame.localhost     → dinogame_web:3000
+  ├── mailhub.localhost      → mailhub_web_frontend:80
+  ├── streamview.localhost   → streamview_web_frontend:80
   └── ... (one entry per app)
 ```
 
@@ -22,28 +22,30 @@ Caddy (reverse proxy, ports 80/443)
 
 ## Included Applications
 
+The `basesite` submodule is kept as a reference/template and is intentionally excluded from the generated `docker-compose.yml`.
+
 | Site | Submodule | Description |
 |------|-----------|-------------|
-| basesite | `basesite` | Base experiment playground (Next.js 15) |
-| careerlink | `careerlink_web` | Career/job platform |
-| travelhub | `travelhub_web` | Travel booking |
-| travelhub_ad | `travelhub_ad_web` | Travel advertising |
+| awsconsole | `awsconsole_web` | AWS console |
 | budgetwise | `budgetwise_web` | Budget management |
+| calendar | `calendar_web` | Calendar |
+| careerlink | `careerlink_web` | Career/job platform |
 | cloudcrm | `cloudcrm_web` | Cloud CRM |
-| cube3d | `cube3d_web` | Fixed-scramble 3D cube game |
+| dinogame | `dinogame_web` | Dino game |
 | eventix | `eventix_web` | Event management |
 | expenseflow | `expenseflow_web` | Expense tracking |
 | formcraft | `formcraft_web` | Form builder |
+| glbviewer | `glbviewer_web` | GLB model viewer |
 | mailhub | `mailhub_web` | Email/messaging hub |
-| streamview | `streamview_web` | Video streaming |
+| overleaf | `overleaf_web` | Hosted Overleaf editor |
+| reviewsphere | `reviewsphere_web` | Review management |
+| slidepuzzle | `slidepuzzle_web` | Slide puzzle |
+| streamview, studio.streamview | `streamview_web` | Video streaming and creator studio |
 | teamchat | `teamchat_web` | Team communication |
+| travelhubpro | `travelhub_ad_web` | Travel booking |
 | vaultbank | `vaultbank_web` | Banking application |
-| canadacv | `canadacv_web` | Canadian CV builder |
-| ds2019 | `ds2019_web` | Data science tool |
-| vaccinebooking | `vaccinebooking_web` | Vaccine booking |
 | visaapplication | `visaapplication_web` | Visa application |
-| calendar | `calendar_web` | Calendar |
-| dinogame | `dinogame_web` | Dino game |
+| wandb | `wandb_web` | Experiment tracking |
 
 ## Prerequisites
 
@@ -112,7 +114,7 @@ Apps will then be reachable at `https://<appname>.example.com`.
 
 ## Managing the Compose File
 
-The `docker-compose.yml` is generated from `docker-compose.main.yml` (Caddy base) plus each submodule's `web-compose.yml`:
+The `docker-compose.yml` is generated from `docker-compose.main.yml` (Caddy base) plus each runtime app's `web-compose.yml`. The generator intentionally skips `basesite/web-compose.yml`.
 
 ```bash
 # Regenerate after adding/removing submodules
