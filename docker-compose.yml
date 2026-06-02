@@ -21,3 +21,4 @@ include:
   - ./vaultbank_web/web-compose.yml
   - ./visaapplication_web/web-compose.yml
   - ./wandb_web/web-compose.yml
+  - ./insurance_claim_web/web-compose.yml
