@@ -63,4 +63,4 @@
 	url = git@github.com:Task-Web/slidepuzzle_web.git
 [submodule "insurance_claim_web"]
 	path = insurance_claim_web
-	url = https://github.com/Task-Web/insurance_claim_web.git
+	url = git@github.com:Task-Web/insurance_claim_web.git
