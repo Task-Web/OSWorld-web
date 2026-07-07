@@ -64,3 +64,6 @@
 [submodule "insurance_claim_web"]
 	path = insurance_claim_web
 	url = git@github.com:Task-Web/insurance_claim_web.git
+[submodule "trippza_web"]
+	path = trippza_web
+	url = git@github.com:Task-Web/trippza_web.git

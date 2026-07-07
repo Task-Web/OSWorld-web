@@ -18,6 +18,7 @@ include:
   - ./streamview_web/web-compose.yml
   - ./teamchat_web/web-compose.yml
   - ./travelhub_ad_web/web-compose.yml
+  - ./trippza_web/web-compose.yml
   - ./vaultbank_web/web-compose.yml
   - ./visaapplication_web/web-compose.yml
   - ./wandb_web/web-compose.yml
