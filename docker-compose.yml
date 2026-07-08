@@ -12,6 +12,7 @@ include:
   - ./formcraft_web/web-compose.yml
   - ./glbviewer_web/web-compose.yml
   - ./mailhub_web/web-compose.yml
+  - ./interfacinglinux_web/web-compose.yml
   - ./overleaf_web/web-compose.yml
   - ./reviewsphere_web/web-compose.yml
   - ./slidepuzzle_web/web-compose.yml
