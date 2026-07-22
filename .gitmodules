@@ -67,3 +67,6 @@
 [submodule "trippza_web"]
 	path = trippza_web
 	url = git@github.com:Task-Web/trippza_web.git
+[submodule "interfacinglinux_web"]
+	path = interfacinglinux_web
+	url = git@github.com:Task-Web/interfacinglinux_web.git
