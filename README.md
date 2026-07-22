@@ -39,6 +39,7 @@ The `basesite` submodule is kept as a reference/template and is intentionally ex
 | interfacinglinux | `interfacinglinux_web` | Static Interfacing Linux article replica |
 | mailhub | `mailhub_web` | Email/messaging hub |
 | overleaf | `overleaf_web` | Hosted Overleaf editor |
+| overleaf-collab | `overleaf_collab_web` | Cookie-scoped collaborative LaTeX task with persistent live state |
 | reviewsphere | `reviewsphere_web` | Review management |
 | slidepuzzle | `slidepuzzle_web` | Slide puzzle |
 | streamview, studio.streamview | `streamview_web` | Video streaming and creator studio |
