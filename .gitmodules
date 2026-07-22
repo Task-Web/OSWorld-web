@@ -67,3 +67,6 @@
 [submodule "trippza_web"]
 	path = trippza_web
 	url = git@github.com:Task-Web/trippza_web.git
+[submodule "overleaf_collab_web"]
+	path = overleaf_collab_web
+	url = git@github.com:Task-Web/overleaf_collab_web.git

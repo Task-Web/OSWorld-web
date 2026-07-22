@@ -13,6 +13,7 @@ include:
   - ./glbviewer_web/web-compose.yml
   - ./mailhub_web/web-compose.yml
   - ./overleaf_web/web-compose.yml
+  - ./overleaf_collab_web/web-compose.yml
   - ./reviewsphere_web/web-compose.yml
   - ./slidepuzzle_web/web-compose.yml
   - ./streamview_web/web-compose.yml

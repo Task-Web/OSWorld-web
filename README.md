@@ -38,6 +38,7 @@ The `basesite` submodule is kept as a reference/template and is intentionally ex
 | glbviewer | `glbviewer_web` | GLB model viewer |
 | mailhub | `mailhub_web` | Email/messaging hub |
 | overleaf | `overleaf_web` | Hosted Overleaf editor |
+| overleaf-collab | `overleaf_collab_web` | Cookie-scoped collaborative LaTeX task with persistent live state |
 | reviewsphere | `reviewsphere_web` | Review management |
 | slidepuzzle | `slidepuzzle_web` | Slide puzzle |
 | streamview, studio.streamview | `streamview_web` | Video streaming and creator studio |
