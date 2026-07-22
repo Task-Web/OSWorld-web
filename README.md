@@ -36,6 +36,7 @@ The `basesite` submodule is kept as a reference/template and is intentionally ex
 | expenseflow | `expenseflow_web` | Expense tracking |
 | formcraft | `formcraft_web` | Form builder |
 | glbviewer | `glbviewer_web` | GLB model viewer |
+| interfacinglinux | `interfacinglinux_web` | Static Interfacing Linux article replica |
 | mailhub | `mailhub_web` | Email/messaging hub |
 | overleaf | `overleaf_web` | Hosted Overleaf editor |
 | overleaf-collab | `overleaf_collab_web` | Cookie-scoped collaborative LaTeX task with persistent live state |
