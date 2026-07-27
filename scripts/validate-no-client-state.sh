@@ -35,7 +35,8 @@ fi
 DIRECT_PATTERN="/api/state(?:/|[?#\"'\\x60[:space:]]|$)"
 MANAGE_PATTERN="/state-(?:manage|doc)(?:/|[?#\"'\\x60[:space:]]|$)"
 CONSTRUCTED_PATTERN="[\"']/api[\"'][[:space:]]*(?:\\+|\\.concat\\()[[:space:]]*[\"']/state|[\"']/api[\"'][[:space:]]*,[[:space:]]*[\"']/state|\\bAPI_BASE.{0,80}[\"']/state|\\b[[:alnum:]_$]*request[[:space:]]*\\([[:space:]]*[\"']/state(?:/|[?#\"'\\x60[:space:]]|$)|\\bfetch[[:space:]]*\\([[:space:]]*[\"']/state(?:/|[?#\"'\\x60[:space:]]|$)|[\"']/state[\"'][[:space:]]*(?:\\+|\\.concat\\()[[:space:]]*[\"']/developer-tools"
-SOURCE_PATTERN="${DIRECT_PATTERN}|${MANAGE_PATTERN}|${CONSTRUCTED_PATTERN}|\\b(useStateApi|StateEditor|StateManage|buildStateUrl|stateEndpoint|STATE_API_(URL|PATH))\\b|\\b(api|apiClient|stateApi|client)\\.(get|put|patch|delete|replace|reset)State[[:space:]]*\\("
+CLIENT_STATE_PATH_PATTERN="[\"'\\x60]/(?:[^\"'\\x60?#[:space:]]*/)?state(?:/|[?#\"'\\x60[:space:]]|$)"
+SOURCE_PATTERN="${DIRECT_PATTERN}|${MANAGE_PATTERN}|${CONSTRUCTED_PATTERN}|${CLIENT_STATE_PATH_PATTERN}|\\b(useStateApi|StateEditor|StateManage|buildStateUrl|stateEndpoint|STATE_API_(URL|PATH))\\b|\\b(api|apiClient|stateApi|client)\\.(get|put|patch|delete|replace|reset)State[[:space:]]*\\("
 
 scan_site() {
   local site=$1
@@ -109,7 +110,7 @@ scan_site() {
   fi
 
   if ((${#asset_roots[@]})) && rg --files-with-matches "${rg_common[@]}" \
-    "${DIRECT_PATTERN}|${MANAGE_PATTERN}|${CONSTRUCTED_PATTERN}" "${asset_roots[@]}"; then
+    "${DIRECT_PATTERN}|${MANAGE_PATTERN}|${CONSTRUCTED_PATTERN}|${CLIENT_STATE_PATH_PATTERN}" "${asset_roots[@]}"; then
     failed=1
   fi
 

@@ -10,6 +10,7 @@ const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 const hostSuffix = process.env.OSWORLD_HOST_SUFFIX || "localhost";
 const scheme = process.env.OSWORLD_SCHEME || "http";
 const controlPath = "/api/" + "state";
+const forbiddenBrowserStatePath = /^\/api\/(?:[^/]+\/)*state(?:\/|$)/;
 const runId = `${Date.now().toString(36)}-${process.pid}`;
 
 const hosts = {
@@ -144,6 +145,13 @@ async function browserJson(page, pathname, options = {}) {
   }, { pathname, options });
 }
 
+function containsObjectKey(value, forbiddenKey) {
+  if (Array.isArray(value)) return value.some((item) => containsObjectKey(item, forbiddenKey));
+  if (!value || typeof value !== "object") return false;
+  if (Object.hasOwn(value, forbiddenKey)) return true;
+  return Object.values(value).some((item) => containsObjectKey(item, forbiddenKey));
+}
+
 async function openGuardedPage(browser, host, cookie, run) {
   const siteOrigin = origin(host);
   const context = await browser.newContext();
@@ -152,6 +160,8 @@ async function openGuardedPage(browser, host, cookie, run) {
   const consoleErrors = [];
   const pageErrors = [];
   const forbiddenRequests = [];
+  const leakedStateResponses = [];
+  const responseChecks = [];
 
   page.on("console", (message) => {
     if (message.type() === "error") consoleErrors.push(message.text());
@@ -159,11 +169,27 @@ async function openGuardedPage(browser, host, cookie, run) {
   page.on("pageerror", (error) => pageErrors.push(error.message));
   page.on("request", (req) => {
     const pathname = new URL(req.url()).pathname;
-    if (/^\/api\/state(?:\/|$)/.test(pathname)) forbiddenRequests.push(`${req.method()} ${req.url()}`);
+    if (forbiddenBrowserStatePath.test(pathname)) forbiddenRequests.push(`${req.method()} ${req.url()}`);
+  });
+  page.on("response", (response) => {
+    const url = new URL(response.url());
+    if (url.origin !== siteOrigin || !url.pathname.startsWith("/api/")) return;
+    const contentType = response.headers()["content-type"] || "";
+    if (!contentType.includes("application/json")) return;
+    responseChecks.push((async () => {
+      try {
+        const body = await response.json();
+        if (containsObjectKey(body, "evaluator_marker")) {
+          leakedStateResponses.push(`${response.request().method()} ${url.pathname}`);
+        }
+      } catch {
+        // Non-JSON and interrupted responses are covered by the page's own error handling.
+      }
+    })());
   });
   await page.route("**/*", async (route) => {
     const pathname = new URL(route.request().url()).pathname;
-    if (/^\/api\/state(?:\/|$)/.test(pathname)) {
+    if (forbiddenBrowserStatePath.test(pathname)) {
       forbiddenRequests.push(`${route.request().method()} ${route.request().url()}`);
       await route.abort("blockedbyclient");
       return;
@@ -180,7 +206,9 @@ async function openGuardedPage(browser, host, cookie, run) {
     assert.ok(visibleText.length > 0, `${host}: rendered UI is empty`);
     if (run) await run(page);
     await page.waitForTimeout(250);
+    await Promise.all(responseChecks);
     assert.deepEqual(forbiddenRequests, [], `${host}: browser requested the control-plane API`);
+    assert.deepEqual(leakedStateResponses, [], `${host}: product API disclosed evaluator-only state`);
     assert.deepEqual(pageErrors, [], `${host}: page errors: ${pageErrors.join(" | ")}`);
     assert.deepEqual(consoleErrors, [], `${host}: console errors: ${consoleErrors.join(" | ")}`);
   } finally {
@@ -249,7 +277,7 @@ const actionChecks = {
     await browserJson(page, "/api/calendar/actions", { method: "POST", body: { type: "TOGGLE_CALENDAR", payload: "c1" } });
   },
   careerlink_web: async (page) => {
-    await browserJson(page, "/api/linkedin/state");
+    await browserJson(page, "/api/linkedin/bootstrap");
     await browserJson(page, "/api/linkedin/company/profile", { method: "POST", body: { overview: "Browser contract profile" } });
   },
   cloudcrm_web: async (page) => {
@@ -269,7 +297,7 @@ const actionChecks = {
     await browserJson(page, "/api/claims/draft", { method: "PUT", body: { formData: { "insured-name": "Ada" }, uploadedFiles: [], currentStep: 2 } });
   },
   mailhub_web: async (page) => {
-    const body = await browserJson(page, "/api/mail/state");
+    const body = await browserJson(page, "/api/mail");
     const emailId = body.mail.emails[0]?.id;
     assert.ok(emailId, "mailhub: no email available");
     await browserJson(page, `/api/mail/email/${encodeURIComponent(emailId)}`, { method: "PATCH", body: { updates: { starred: true } } });
